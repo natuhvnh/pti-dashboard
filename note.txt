@@ -1,0 +1,24 @@
+1. Create global react app
+npm install -g create-react-app
+2. Create folder react
+create-react-app <folder name>
+3. Run react app
+npm start
+4. Install react router dom
+npm install --save react-router-dom
+5. Install UI package (if needed)
+npm install --save @material-ui/core @material-ui/icons
+6. Install axios
+npm install --save axios
+7. Install decode token authentication (if needed)
+npm install --save jwt-decode
+8. Install redux
+npm install --save redux react-redux redux-thunk
+9. Clone from github => install all dependences in package.json
+npm install
+10. Scroll nav bar
+npm install --save react-scrollspy-nav
+11. Install bootstrap
+npm install react-bootstrap bootstrap
+
+
