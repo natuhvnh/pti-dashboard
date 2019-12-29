@@ -21,6 +21,17 @@ class NavBar extends Component {
             </button>
           </div>
         </form>
+        <div className="nav-items">
+          <div className="nav-item">
+            <img src="images/icon/link.png" alt="link" />
+          </div>
+          <div className="nav-item">
+            <img src="images/icon/notify.png" alt="link" />
+          </div>
+          <div className="nav-item">
+            <img src="images/icon/profile.png" alt="link" />
+          </div>
+        </div>
       </div>
     );
   }
