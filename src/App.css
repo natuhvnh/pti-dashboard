@@ -151,7 +151,7 @@ ul {
 .side-menu2 {
   display: flex;
   flex-wrap: wrap;
-  width: 930px;
+  width: 980px;
   height: 540px;
   margin-left: 205px;
   visibility: hidden;
@@ -215,4 +215,39 @@ ul {
 .integ-info > span {
   font-weight: bold;
   float: right;
+}
+/* Graph */
+.graph-header {
+  display: flex;
+  /* height: 60px; */
+  background-color: white;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.graph-note {
+  padding-left: 20px;
+}
+.graph-note > span {
+  padding-right: 15px;
+}
+.graph-note > h6 {
+  font-size: 18px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.graph-note i {
+  padding-right: 2px;
+}
+.thanh-toan {
+  color: #4487ed;
+}
+.hoa-hong {
+  color: #82aef3;
+}
+.boi-thuong {
+  color: #a2c4f6;
+}
+.graph-option {
+  margin-left: auto;
+  padding-right: 20px;
 }
