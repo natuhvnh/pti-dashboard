@@ -1,7 +1,45 @@
 import React, { Component } from "react";
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip } from "recharts";
+import { AreaChart, Area, CartesianGrid, Tooltip } from "recharts";
 
 class Graph extends Component {
+  state = {
+    week: "no",
+    month: "no",
+    year: "no",
+    today: "yes"
+  };
+  handleWeek = () => {
+    this.setState({
+      week: "yes",
+      month: "no",
+      year: "no",
+      today: "no"
+    });
+  };
+  handleMonth = () => {
+    this.setState({
+      week: "no",
+      month: "yes",
+      year: "no",
+      today: "no"
+    });
+  };
+  handleYear = () => {
+    this.setState({
+      week: "no",
+      month: "no",
+      year: "yes",
+      today: "no"
+    });
+  };
+  handleDay = () => {
+    this.setState({
+      week: "no",
+      month: "no",
+      year: "no",
+      today: "yes"
+    });
+  };
   render() {
     const data = [
       {
@@ -64,25 +102,49 @@ class Graph extends Component {
           </div>
           <div className="graph-option">
             <div>
-              <button className="time-stamp">Tuần</button>
-              <button className="time-stamp">Tháng</button>
-              <button className="time-stamp">Năm</button>
-              <button className="time-stamp today">Hôm nay</button>
-              <i className="fa fa-angle-down"></i>
+              <button
+                className={this.state.week === "yes" ? "time-stamp bg-gray" : "time-stamp"}
+                onClick={this.handleWeek}>
+                Tuần
+              </button>
+              <button
+                className={this.state.month === "yes" ? "time-stamp bg-gray" : "time-stamp"}
+                onClick={this.handleMonth}>
+                Tháng
+              </button>
+              <button
+                className={this.state.year === "yes" ? "time-stamp bg-gray" : "time-stamp"}
+                onClick={this.handleYear}>
+                Năm
+              </button>
+              <button
+                className={
+                  this.state.today === "yes" ? "time-stamp today bg-gray" : "time-stamp today"
+                }
+                onClick={this.handleDay}>
+                Hôm nay
+              </button>
+              <img src="images/icon/down.png" alt="graph" />
+              <img src="images/icon/refresh.png" alt="graph" />
+              <img src="images/icon/close.png" alt="graph" />
+              {/* <i className="fa fa-angle-down"></i>
               <i className="fa fa-refresh"></i>
-              <i className="fa fa-times"></i>
+              <i className="fa fa-times"></i> */}
             </div>
             <div className="graph-info">
               <p>
-                <h6>25%</h6>
+                <span className="graph-info-header">25%</span>
+                <br />
                 <span>Thanh toán</span>
               </p>
               <p>
-                <h6>5%</h6>
+                <span className="graph-info-header">5%</span>
+                <br />
                 <span>Hoa hồng</span>
               </p>
               <p>
-                <h6>5%</h6>
+                <span className="graph-info-header">5%</span>
+                <br />
                 <span>Bồi thường</span>
               </p>
             </div>

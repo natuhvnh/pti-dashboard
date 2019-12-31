@@ -22,3 +22,6 @@ npm install --save react-scrollspy-nav
 npm install react-bootstrap bootstrap
 12. Use icons
 Add: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> in public/index.html
+Or
+Add: <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+https://material.io/resources/icons/?search=add&icon=add_circle_outline&style=baseline

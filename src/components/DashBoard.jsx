@@ -3,6 +3,8 @@ import Integration from "./Integration";
 import Graph from "./Graph";
 import RecentInfo from "./RecentInfo";
 import Details from "./Details";
+import OrtherService from "./OrtherService";
+import Footer from "./Footer";
 
 class DashBoard extends Component {
   render() {
@@ -12,6 +14,8 @@ class DashBoard extends Component {
         <Graph />
         <RecentInfo />
         <Details />
+        <OrtherService />
+        <Footer />
       </div>
     );
   }
