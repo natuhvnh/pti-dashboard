@@ -79,17 +79,17 @@ class Details extends Component {
           {
             icon: "images/icon/ma.png",
             name: "Mã nguyên nhân",
-            business: "Bồi thường/ Mã"
+            business: "Bồi thường / Mã"
           },
           {
             icon: "images/icon/ma.png",
             name: "Mã hậu quả",
-            business: "Bồi thường/ Mã"
+            business: "Bồi thường / Mã"
           },
           {
             icon: "images/icon/ma.png",
             name: "Mã sự kiện",
-            business: "Bồi thường/ Mã"
+            business: "Bồi thường / Mã"
           }
         ]
       }

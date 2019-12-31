@@ -58,7 +58,7 @@ class RecentInfo extends Component {
       {
         icon: "images/icon/checklist.png",
         col1: "Giám định",
-        col2: "Bồi thường/ Hồ sơ",
+        col2: "Bồi thường / Hồ sơ",
         col3: "05/12/2019"
       }
     ]
